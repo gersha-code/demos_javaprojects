@@ -3,13 +3,17 @@ package unidimencionales;
 import java.util.Random;
 
 /*
- * Crear arreglos enteros de 4 celdas. Generar un valor aleatorio entre 1000 y 9999. Separar las cifras de ese
- * valor para que sea colocada cada cifra del valor en una celda diferente del primer arreglo. Aplica el siguiente
- * algoritmo para "cifrar" el contenido del primer arreglo, dejando el cifrado en el segundo arreglo:
- *      a) A cada valor de la celda del primer arreglo debe sumarse 7
- *      b) De cada suma resultante del paso anterior obtener el residuo de su division entre 10
- *      c) Colocar los valores resultantes del paso anterior colocando el contenido de la primera celda del primer
- *          arreglo en la tercera...
+Crear dos arreglos de enteros de 4 celdas. Generar un valor aleatorio entre 1000 y 9999. Separar las cifras de ese
+valor para que sea colocada cada cifra del valor en una celda diferente del primer arreglo. Aplicar el siguiente
+algoritmo para “cifrar” el contenido del primer arreglo, dejando el cifrado en el segundo arreglo:
+a) A cada valor de la celda del primer arreglo debe sumarse 7
+b) De cada suma resultante en el paso anterior obtener el residuo entero de su división entre 10 (por ejemplo si la suma
+resulta 15, el residuo entero entre 10 sería 5)
+c) Colocar los valores resultantes del paso anterior colocando el contenido de la primera celda del primer arreglo en la tercera
+celda del segundo arreglo y el contenido de la tercera celda del primer arreglo en la primera celda del segundo arreglo. A
+continuación colocar el contenido de la segunda celda del primer arreglo en la cuarta celda del segundo arreglo y el contenido
+de la cuarta celda del primer arreglo en la segunda celda del segundo arreglo.
+Ejemplo, suponiendo que el valor generado fue 7392
  */
 public class demo05 {
     public static void main(String[] args) {
@@ -36,7 +40,7 @@ public class demo05 {
             vector[i] = (vector[i] + 7) % 10;
             System.out.print(vector[i] + " | ");
         }
-        int vector_cifrado [] = new int[vector.length];
+        int vector_cifrado[] = new int[vector.length];
         for (int i = 0; i < vector.length; i++) {
             if (i % 2 == 0) { // es impar
                 vector_cifrado[i] = vector[(vector.length / 2) - i];
@@ -44,7 +48,7 @@ public class demo05 {
                 vector_cifrado[i] = vector[vector.length - i];
             }
         }
-        System.out.print("\nCifrado 2: |" );
+        System.out.print("\nCifrado 2: |");
         for (int i = 0; i < vector.length; i++) {
             System.out.print(vector_cifrado[i] + " | ");
         }

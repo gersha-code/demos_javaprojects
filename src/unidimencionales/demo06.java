@@ -7,9 +7,24 @@ package unidimencionales;
  *
  */
 
+import java.util.Random;
+
 public class demo06 {
     public static void main(String[] args) {
-        
+        Random random = new Random();
+        int n = random.nextInt(10);
+        int vector [] = new int[10];
+        int aux;
+        for (int i = 0; i < vector.length; i++) {
+            aux = random.nextInt(0, 20);
+            for (int j = 0; j < vector.length; j++) {
+                if (aux >= vector[j]) {
+                    vector[i] = aux;
+                } else { 
+                    aux = vector[j];
+                }
+            }
+            System.out.print(vector[i] + "\t");
+        }
     }
-
 }
