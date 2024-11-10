@@ -18,9 +18,6 @@ public class demo_OrientadoObjetos {
         System.out.println(""); //ya no llega a este metodo por el return
     }
 
-    public static int ffgf(){
-        
-    }
     /*
      * El metodo puede recibir y regresar datos
      * 
