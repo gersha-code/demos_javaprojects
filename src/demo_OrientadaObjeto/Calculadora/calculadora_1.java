@@ -1,6 +1,6 @@
 package demo_OrientadaObjeto.Calculadora;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -19,8 +19,6 @@ import java.awt.event.*;
 public class calculadora_1 {
 
     private JFrame frame;
-    private JTextField textfield;
-    private JTextArea textArea;
 
     private String operador = "";
     private double numero_1 = 0;
@@ -31,14 +29,5 @@ public class calculadora_1 {
         frame = new JFrame("calculadora");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        //crear un contenedor para los componentes
-        Container container = frame.getContentPane();
-        container.setLayout(new BorderLayout());
-
-        //crear el campo de texto para mostrar el resultado
-        textfield = new JTextField();
-        textfield.setEditable(false);
-        container.add(textfield, BorderLayout.NORTH);
     }
 }
