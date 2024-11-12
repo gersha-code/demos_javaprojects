@@ -11,13 +11,13 @@ public class main {
         JTextPane text = new JTextPane();
         JButton button = new JButton();
         text.setText("holaa");
+        ventana.setBackground(null);
         button.setAction(null);
         ventana.setSize(800, 600);
         ventana.add(button);
         ventana.add(text);
         ventana.setTitle("primera ventana");
         ventana.setVisible(true);
-        ventana.getTreeLock();
         
     }
 
