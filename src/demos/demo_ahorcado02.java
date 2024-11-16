@@ -9,19 +9,35 @@ public class demo_ahorcado02 {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         String[] words = new String[15];
-        //x variable auxiliar
-        int x = random.nextInt(15);
+
         
-        //sout de abajo es auxiliar
-        System.out.println(words(words, x) + "  " + words(words, x).length());
-        System.out.println(hide_word(words(words, x)));
+        // System.out.println(word(words, random.nextInt(15)));
+        int aux = random.nextInt(15);
+        char[] hide = new char[word(words, aux).length()*2];
+        String palabra = word(words, aux);
+        
+        System.out.println(hide_word(word(words, aux), hide));
+        //System.out.println(hide_word(word(words, aux)));
+        char selec;
+        do {
+            selec = scanner.next().charAt(0);
+            //ahorcado(hide_word(word(words, aux), hide), selec);
+        } while (selec != 'x');
+
     }
 
-    /*
-     * Este metodo resguarda las 15 palabras aleatorias que pueden ser seleccionadas
-     * de manera aleatoria para jugar.
-     */
-    public static String words(String[] word, int random) {  
+    public static char[] ahorcado(String word, char[] word, char letter){
+
+        for (int i = 0; i < word.length; i++) {
+            if () {
+                word[i] = letter;
+            }
+        }
+
+        return word;
+    }
+
+    public static String word(String[] word, int random) {
         word[0] = "casa";
         word[1] = "silla";
         word[2] = "maestra";
@@ -38,12 +54,19 @@ public class demo_ahorcado02 {
         word[14] = "pizarron";
         return word[random];
     }
+
+    public static char[] hide_word(String word, char[] hide) {
     
-    public static String hide_word(String word){
-        String hide = "";
-        for (int i = 0; i < word.length(); i++) {
-            hide += "_" + " ";
+        for (int i = 0; i < word.length()*2; i++) {
+            if(i%2 == 0){
+                hide[i] = '_'; 
+            } else {
+                hide[i] = ' ';
+            }
+            
         }
         return hide;
     }
+
+
 }
