@@ -16,31 +16,42 @@ public class pruebas {
         int random_main = random.nextInt(15);
         String word_main = word(words, random_main); // Obtiene la palabra seleccionada
         char[] oculto_main = hide_word(word_main); // Inicializa la palabra oculta
-        System.out.println("palabra: " + word_main);
-        char letter;
+        //System.out.println("palabra: " + word_main);
+        char letter = ' ';
         int count = 1;
         do {
             //este for recorre el vector y agrega espacios entre los guiones
             for (int i = 0; i < oculto_main.length; i++) {
                 System.out.print(oculto_main[i] + " "); // Imprime cada caracter seguido de un espacio
             }
-            System.out.println(); 
-
-            System.out.print("Palabra a adivinar: ");
+            
+            System.out.print("\nPalabra a adivinar: ");
             letter = scanner.next().toLowerCase().charAt(0);
             ahorcado(word_main, oculto_main, letter);
             // System.out.println(check(oculto_main)); //Este sout es para revisar el estado
             // de la palabra
             System.out.println("Oportunidad " + count + ", que letra aparece en la palabra? ");
-            count++;
+            if (o(word_main, letter) == 1) {
+                count += o(word_main, letter);
+            }
+            
         } while (check(oculto_main) != true && count != 8);
 
-        if (count <= 8) {
+        if (count <= 8 && check(oculto_main)) {
             System.out.println("Felicidades, lograste adivinar la palabra!");
         } else {
             System.out.println("Tienes una ultima oportunidad de adivinar la palabra, ingresa la palabra completa: ");
             String last_word = scanner.next().toLowerCase();
             last_chance(word_main, last_word);
+        }
+    }
+    //este metodo corrobora si existe coincidencia, sino entonces regresa 1 para restar al contador de oportunidades
+    public static int o(String word, char letter){
+        String x = String.valueOf(letter);
+        if (word.contains(x)) {
+            return 0;
+        } else {
+            return 1;
         }
     }
 
@@ -64,10 +75,11 @@ public class pruebas {
     }
 
     public static char[] ahorcado(String word, char[] oculto, char letter) {
+        int a = 8;
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == letter && oculto[i] == '_') {
                 oculto[i] = letter;
-            }
+            } 
         }
         return oculto;
     }
