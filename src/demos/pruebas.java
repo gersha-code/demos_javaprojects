@@ -22,7 +22,7 @@ public class pruebas {
         do {
             //este for recorre el vector y agrega espacios entre los guiones
             for (int i = 0; i < oculto_main.length; i++) {
-                System.out.print(oculto_main[i] + " "); // Imprime cada caracter seguido de un espacio
+                System.out.print("\u001B[33m" + oculto_main[i] + "\u001B[0m "); // Imprime cada caracter seguido de un espacio
             }
             
             System.out.print("\nPalabra a adivinar: ");
@@ -57,9 +57,9 @@ public class pruebas {
 
     public static void last_chance(String main_word, String last_word) {
         if (main_word.equals(last_word)) {
-            System.out.println("Felicidades!, lograste adivinar la palabra");
+            System.out.println("\u001B[45mFelicidades!, lograste adivinar la palabra\u001B[0m");
         } else {
-            System.out.println("Lo siento has perdido, agotaste tus oportunidades");
+            System.out.println("\u001B[41mLo siento has perdido, agotaste tus oportunidades\u001B[0m");
         }
     }
 
