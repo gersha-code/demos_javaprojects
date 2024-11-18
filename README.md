@@ -1,7 +1,6 @@
-## Getting Started
+## demos_javaprojects
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
+Uhmmm... basicamente este repositorio consiste en los proyectos logicos que he estado desarrollando en mi acercamiento a la programacion en Java y asi.
 ## Folder Structure
 
 The workspace contains two folders by default, where:
