@@ -3,9 +3,9 @@ package demos;
 public class Conway {
 
     public static void main(String[] args) {
-        int filas = 10; // Número de filas deseadas
-        String[][] matrix = new String[filas][100]; // Ajuste del tamaño según filas
-        serie(matrix, filas); // Generar la serie
+        //int filas = 99; // Número de filas deseadas
+        String[][] matrix = new String[100][100]; // Ajuste del tamaño según filas
+        serie(matrix, 100); // Generar la serie
         imprimirMatriz(matrix); // Imprimir la matriz
     }
 
