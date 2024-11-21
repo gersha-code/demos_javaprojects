@@ -12,7 +12,7 @@ public class Ahorcado0 {
 
         // Selección de una palabra aleatoria
         String palabraselec = palabras(palabras, random.nextInt(15)).toUpperCase();
-        System.out.println("Palabra seleccionada (oculta): " + palabraselec);
+        //System.out.println("Palabra seleccionada (oculta): " + palabraselec);
 
         // Mostrar los guiones iniciales
         String palenguion = guiones(palabraselec);
