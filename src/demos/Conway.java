@@ -29,23 +29,24 @@ public class Conway {
     }
 
     /*
-     * Genera el siguiente término de la serie de Conway
+     * Genera el siguiente término de la serie
      */
     public static String generarSiguienteTermino(String actual) {
-        StringBuilder siguiente = new StringBuilder(); // Uso de StringBuilder para optimizar
+        String siguiente = ""; // Usamos concatenación directa
         int contador = 1;
 
         for (int j = 1; j < actual.length(); j++) {
             if (actual.charAt(j) == actual.charAt(j - 1)) {
                 contador++;
             } else {
-                siguiente.append(contador).append(actual.charAt(j - 1));
+                // Concatenamos el contador y el carácter
+                siguiente += contador + "" + actual.charAt(j - 1);
                 contador = 1; // Reiniciar el contador
             }
         }
-        // Agrega el último grupo
-        siguiente.append(contador).append(actual.charAt(actual.length() - 1));
-        return siguiente.toString();
+        // Agregamos el último grupo
+        siguiente += contador + "" + actual.charAt(actual.length() - 1);
+        return siguiente;
     }
 
     /*
