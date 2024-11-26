@@ -18,7 +18,9 @@ public class gato {
             coordenadas = scanner.next();
             gato(matriz, coordenadas, simbolo);
             imprimirMatriz(matriz);
-            System.out.println(ganador(matriz, simbolo, count));
+             
+            
+            System.out.println(ganador(matriz, simbolo));
         }
     }
 
@@ -34,17 +36,19 @@ public class gato {
         return matriz;
     }
 
-    public static int ganador(String tablero[][], String jugador, int count) {
-        int aux_count = count;
+    public static boolean ganador(String tablero[][], String jugador) {
+        boolean filaCompleta = true;
         for (int i = 0; i < tablero.length; i++) {
+           
             for (int j = 0; j < tablero[i].length; j++) {
-                if (tablero[i][j] == jugador && i == j )  {
-                    aux_count++;
-                }
+                filaCompleta = false;
+                break;
             }
-        }
-        return aux_count;
 
+        }
+        if (filaCompleta) {
+            return true;
+        }    
     }
 
     public static void imprimirMatriz(String matriz[][]) {
