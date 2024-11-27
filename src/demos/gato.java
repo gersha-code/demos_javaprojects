@@ -11,6 +11,15 @@ public class gato {
         String simbolo = "";
         int count = 0;
         String coordenadas;
+        System.out.print("Simbolo del jugador 1: ");
+        char j1 = scanner.next().charAt(0);
+        char j2 = j1;
+        System.out.print("El simbolo del J2 debe ser diferente al del J1.\n");
+        while(j2 == j1){
+            System.out.print("Simbolo del jugador 2: ");
+            j2 = scanner.next().charAt(0);
+        }
+
         while (simbolo != "q") {
             System.out.println("Simbolo: ");
             simbolo = scanner.next();
@@ -19,8 +28,7 @@ public class gato {
             gato(matriz, coordenadas, simbolo);
             imprimirMatriz(matriz);
              
-            
-            System.out.println(ganador(matriz, simbolo));
+        
         }
     }
 
@@ -34,21 +42,6 @@ public class gato {
 
         matriz[coordenada_1][coordenada_2] = simbolo;
         return matriz;
-    }
-
-    public static boolean ganador(String tablero[][], String jugador) {
-        boolean filaCompleta = true;
-        for (int i = 0; i < tablero.length; i++) {
-           
-            for (int j = 0; j < tablero[i].length; j++) {
-                filaCompleta = false;
-                break;
-            }
-
-        }
-        if (filaCompleta) {
-            return true;
-        }    
     }
 
     public static void imprimirMatriz(String matriz[][]) {

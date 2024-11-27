@@ -1,8 +1,19 @@
 package euler_project;
 /*
- * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
- * The sum of these multiples is 23. Find the sum of all multiples of 3 or 5 below 1000.
+ * Si enumeramos todos los numeros naturales de 10 que son multiplos de 3 o 5, obtenemos 3, 5, 6,  9. La suma de estos multiplos es 23.
+ * Encuentra la suma de todos los multiplos de 3 o 5 menores que 1000.
  */
-public class euler_001 {
 
+public class euler_001 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 0; i < 1000; i++) {
+            if (i%3 == 0 || i%5==0) {
+                sum += i;
+                System.out.println(i);
+            }
+        }
+        System.out.println(sum);
+    }   
 }
+
