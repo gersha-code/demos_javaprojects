@@ -13,7 +13,7 @@ public class gato_v2 {
         int coordenada_2 = 0;
         System.out.println("G  A   T   O");
         while (!valido) {
-            System.out.println("\t>Seleccione la dimenciones del tablero de juego:\n\t[3]\t[5]\t[7]");
+            System.out.println(">Seleccione la dimenciones del tablero de juego:\n[3]\t[5]\t[7]");
             dimencionesTablero = scanner.nextInt();
             if (dimencionesTablero == 3 || dimencionesTablero == 5 || dimencionesTablero == 7) {
                 valido = true;
@@ -23,7 +23,7 @@ public class gato_v2 {
                     imprimirTablero(tablero);
                     System.out.println("Turno de jugador " + aux_count);
                     char jugador = scanner.next().charAt(0);
-                    while (!valido_2) {
+                   
                         System.out.println("Coordenada:");
                         String coordenadas = scanner.next();
                         coordenada_1 = Integer.parseInt(coordenadas.substring(0, coordenadas.indexOf(","))); // coordenada
@@ -33,7 +33,7 @@ public class gato_v2 {
                         } else {
                             System.out.println("Coordenada invdalida");
                         }
-                    }
+                    
                     // 2
                     if (verificarCoordenadas(tablero, coordenada_1, coordenada_2)) {
                         tablero[coordenada_1][coordenada_2] = jugador;
