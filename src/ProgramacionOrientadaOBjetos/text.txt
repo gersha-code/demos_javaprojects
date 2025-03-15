@@ -1,0 +1,49 @@
+
+        DEMO 002
+MENU
+1 Mostrar datos
+2 Cerrar semestre
+3 Reinscribir
+4 Prorroga de semestre.
+5 Terminar programa
+
+Al iniciar la ejecución del programa se deben pedir datos del alumno (nombre, numero de control, semestre 
+actual, cantidad de materias a cursar, nombre de las materias a cursar ). El estatus de inicio por default será “true”
+que significa Activo y el promedio por default al registrar al alumno la primera vez será de -1. Asegurar que el 
+semestre actual esté entre 1 y 12.
+
+1 Mostrar datos: Mostrar nombre del alumno, numero de control, el semestre que cursa, su estatus (activo o baja), 
+y las materias que está cursando y el promedio del semestre anterior. Si el promedio es -1 significa que aún no se 
+ha calculado ningún cierre de semestre y debe mostrarse la leyenda (“sin promedio reciente”). En caso de que el 
+alumno no esté inscrito en ese momento, debe mostrarse su nombre, su estatus y la leyenda “alumno no inscrito
+en el presente semestre”. El estatus es activo aún cuando el estudiante no esté inscrito en ese momento.
+
+2 Cerrar semestre: Mostrar nombre del alumno, numero de control, semestre que cursa y estatus actuales. En caso 
+de que el alumno esté inscrito pedir el ingreso de sus calificaciones indicando el nombre de cada materia, ejemplo
+“Ingresa calificacion de progra: “ (validar que las calificaciones ingresadas sean valores entre 0 y 100). Para valores
+menores de 70 se considera que la calificación es de cero y con el cero se calculará el promedio. Calcular el 
+promedio. Aumentar el semestre y cambiar estatus en caso de que el semestre llegue a 13 (baja). Eliminar los 
+arreglos de materias y calificaciones. Si el alumno no está inscrito solo mostrar sus datos y aumentar el numero de 
+semestre.
+
+3 Reinscribir: Mostrar el nombre, numero de control, semestre actual y estatus. Preguntar cuantas materias se 
+cursarán y crear nuevos arreglos de materias y calificaciones. Alumnos con estatus de baja no podrán reinscribirse 
+(mostrar leyenda). 
+
+4 Prorroga de semestre: Cambiar el estatus a “true” (activo)y mostrar el resto de sus datos. El contador de semestre 
+se mantiene en su valor actual y seguirá creciendo en caso de volver a hacer cierre de semestre.
+
+5 Reinscribir Mostrar mensaje final (el que gustes)
+Cada una de las opciones del menú puede ejecutarse en repetidas ocasiones hasta elegir la opción 5. El 
+programa debe estructurarse con métodos según se explicó en clase y definir lo mas conveniente en cuanto a 
+variables locales y globales. 
+
+        Metodo manin
+se leen los datos principales del alumno
+se valida que el semestre de entrada sea menor a 1 o mayor a 12, si es asi entrara para la lectura
+En seguida se tiene un arreglo que guardara el nombre de las materias.
+
+en el metodo do while se ejecutara mientras la opcion sea diferente a 5
+
+        metodo cerrarSemestre
+se mandan todos los datos recolectados
