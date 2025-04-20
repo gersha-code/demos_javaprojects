@@ -15,6 +15,7 @@ public class main {
     public static final String MORADO = "\u001B[35m";
     public static final String CIAN = "\u001B[36m";
     public static final String BLANCO = "\u001B[37m";
+    public static final String FONDO_BLANCO = "\u001B[47m";
 
     public static void main(String[] args) {
         agencia agenciaObjeto = new agencia(10);
@@ -32,7 +33,7 @@ public class main {
         char seleccion = ' ';
 
         while (seleccion >= '1' && seleccion <= '4') {
-            System.out.println( + "\t\tAgencia de renta de vehiculos\n1. Rentar\n2.Devolver\n3.Mostrar vehiculos");
+            System.out.println(FONDO_BLANCO + "\t\tAgencia de renta de vehiculos\n1. Rentar\n2.Devolver\n3.Mostrar vehiculos" + RESET);
             seleccion = scanner.next().charAt(0);
         }
 
