@@ -1,0 +1,97 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "bloque5_6.flotante.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "bloque5_6.enfoque2.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "bloque5_6.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "persona",
+            "request": "launch",
+            "mainClass": "bloque5_6.edadverificacion.persona",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "demo02",
+            "request": "launch",
+            "mainClass": "bloque5_6.demo02",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "demo01",
+            "request": "launch",
+            "mainClass": "bloque5_6.demo01",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "juas",
+            "request": "launch",
+            "mainClass": "pruebas.juas",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "WireframeCube",
+            "request": "launch",
+            "mainClass": "demos.WireframeCube",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "demoVentana1",
+            "request": "launch",
+            "mainClass": "ejemplosVentanas.demoVentana1",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "ProgramacionOrientadaOBjetos.Agencia.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "demos.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "polimorfismoVehiculosEQUIPO.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        }
+    ]
+}

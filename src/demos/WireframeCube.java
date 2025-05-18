@@ -1,8 +1,10 @@
 package demos;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class WireframeCube {
+
 
     public static void main(String[] args) throws InterruptedException {
         // Define los vértices del cubo en coordenadas 3D
@@ -10,11 +12,13 @@ public class WireframeCube {
             {1, 1, 1}, {-1, 1, 1}, {-1, -1, 1}, {1, -1, 1}, // Frente
             {1, 1, -1}, {-1, 1, -1}, {-1, -1, -1}, {1, -1, -1} // Atrás
         };
+        System.out.println();
 
+        Scanner d = new Scanner(System.in);
         // Define las conexiones entre los vértices para formar líneas
         int[][] edges = {
             {0, 1}, {1, 2}, {2, 3}, {3, 0}, // Frente
-            {4, 5}, {5, 6}, {6, 7}, {7, 4}, // Atrás
+            {4, 5}, {5, 6},code {6, 7}, {7, 4}, // Atrás
             {0, 4}, {1, 5}, {2, 6}, {3, 7}  // Conexiones entre frente y atrás
         };
 
