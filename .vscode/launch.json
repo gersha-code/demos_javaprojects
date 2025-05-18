@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "fileINput",
+            "request": "launch",
+            "mainClass": "bloque5_6.files.fileINput",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "archivowuas",
+            "request": "launch",
+            "mainClass": "bloque5_6.files.archivowuas",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "ProgramacionOrientadaOBjetos.telefonosHerenciaEQUIPO.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "bloque5_6.sistema.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "bloque5_6.flotante.main",
