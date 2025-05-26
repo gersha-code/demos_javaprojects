@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "pruebas.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "bloque5_6.SerializacionEjemplo.main",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "punto_deVenta",
+            "request": "launch",
+            "mainClass": "pruebas.punto_deVenta",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "SerializarPersona",
+            "request": "launch",
+            "mainClass": "bloque5_6.pruebasdeArchivos.SerializarPersona",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
+            "name": "claseFIle",
+            "request": "launch",
+            "mainClass": "bloque5_6.pruebasdeArchivos.claseFIle",
+            "projectName": "demos_javaprojects_46d99625"
+        },
+        {
+            "type": "java",
             "name": "fileINput",
             "request": "launch",
             "mainClass": "bloque5_6.files.fileINput",
